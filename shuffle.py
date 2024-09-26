@@ -37,7 +37,7 @@ def count_factors(deck_size):
     return sum(1 for i in range(1, deck_size + 1) if deck_size % i == 0)
 
 # Calculate shuffles and factors for even ranges from 1 to 2000
-deck_sizes = range(2, 10001, 10)
+deck_sizes = range(2, 5000, 2)
 shuffles_needed = [count_shuffles(deck_size) for deck_size in deck_sizes]
 factors_count = [count_factors(deck_size) for deck_size in deck_sizes]
 
